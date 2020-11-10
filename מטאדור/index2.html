@@ -1,0 +1,59 @@
+<!-- מבנה המערכת -->
+<!DOCTYPE html>
+<html class="index2">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>מבנה המערכת</title>
+        <!-- jquery!!! -->
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="index2.js"></script>
+    </head>
+    <body>
+        <!-- icon -->
+        <img id="tag" src="images/tag.png" alt="tag">
+        <h1 class="title">מבנה המערכת</h1>
+        <!-- learn part -->
+        <p>לחצו על כל החלקים הזוהרים כדי לראות את שמם!</p>
+        <img src="images/" alt="metador">
+        <button type="button">הבא</button>
+        <!-- next page -->
+        <p>עכשיו בואו נבדוק מה אתם זוכרים!</p>
+        <p>סדרו את שמות החלקים במקומות המתאימים</p>
+        <div>
+            <!-- draggable -->
+            <div class="ui-widget-content draggables">
+                <p id="drag1">זביל</p>
+                <p id="drag2">כוונת</p>
+                <p id="drag3">ידית אחיזה</p>
+                <p id="drag4">מגנים</p>
+                <p id="drag5">קת</p>
+                <p id="drag6">נצרה</p>
+                <p id="drag7">ידית נשיאה</p>
+                <p id="drag8">ידית דריכה</p>
+                <p id="drag9">הדק</p>
+            </div>
+            <!-- droppable -->
+            <div class="ui-widget-header droppables">
+                <p id="drop1"></p>
+                <p id="drop2"></p>
+                <p id="drop3"></p>
+                <p id="drop4"></p>
+                <p id="drop5"></p>
+                <p id="drop6"></p>
+                <p id="drop7"></p>
+                <p id="drop8"></p>
+                <p id="drop9"></p>
+            </div>
+            <button type="button" id="check-button">בדוק</button>
+        </div>
+        <!-- messages -->
+        <div class="wrong-message">
+            <p>נסו שוב</p>
+        </div>
+        <div class="correct-message">
+            <p>תותחים!</p>
+            <button type="button" id="return-button" class="return-button">חזרה</button>
+        </div>
+    </body>
+</html>

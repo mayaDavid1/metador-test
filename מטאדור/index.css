@@ -1,0 +1,237 @@
+/* ------------------------------------------------------ */
+/* to all the indexes */
+/* ------------------------------------------------------ */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+    direction: rtl;
+    text-align: center;
+}
+
+#tag {
+    height: 6%;
+    width: 2.5%;
+    position: absolute;
+    top: 0.5%;
+    right: 0.5%;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    right: 37%;
+    font-size: 5.5vw;
+    font-weight: 800;
+    animation: title-animation 0.8s linear 0.5s forwards;
+    text-shadow: black 0.08vw 0.08vw 0.5vw;
+}
+
+@-webkit-keyframes title-animation {
+    0% {
+        top: 20%;
+        right: 35%;
+        font-size: 5.5vw;
+        font-weight: 800;
+    } 100% {
+        top: 0.5%;
+        right: 3.2%;
+        font-size: 1vw;
+        font-weight: 600;
+    }
+}
+
+#return-btn1, #return-btn4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-radius: 0.8vw;
+    margin-top: 10%;
+    visibility: hidden;
+    position: absolute;
+    box-shadow: rgb(82, 82, 82) 0.1vw 0.1vw 0.5vw;
+    bottom: 5%;
+    left: 3%;
+}
+
+#return-btn1:hover, #return-btn4:hover {
+    cursor: pointer;
+}
+
+#return-btn1:active, #return-btn4:active {
+    bottom: 3%;
+}
+
+/* ------------------------------------------------------ */
+/* index1 */
+/* נתונים טכניים */
+/* ------------------------------------------------------ */
+.index1 {
+    background-image: url("images/sky1.jpg");
+}
+
+.all-illus {
+    visibility: hidden;
+}
+
+#all-details {
+    position: relative;
+    top: 15%;
+    visibility: hidden;
+}
+
+.detail {
+    background-color: grey;
+    font-size: 1vw;
+    font-weight: 500;
+    height: 5%;
+    width: 10%;
+    color: white;
+    position: relative;
+    margin-top: 2%;
+    margin-right: 5%;
+    box-shadow: rgb(82, 82, 82) 0.1vw 0.1vw 0.5vw;
+    border-radius: 0.3vw;
+}
+
+.detail:hover {
+    cursor: pointer;
+}
+
+.detail:active {
+    background-color: rgb(102, 101, 101);
+}
+
+/* ------------------------------------------------------ */
+/* index2 */
+/* מבנה המערכת */
+/* ------------------------------------------------------ */
+.index2 {
+    background-image: url("images/sky1.jpg");
+}
+
+/* ------------------------------------------------------ */
+/* index3 */
+/* מצבי פעולה */
+/* ------------------------------------------------------ */
+.index3 {
+    background-image: url("images/sky1.jpg");
+}
+
+/* ------------------------------------------------------ */
+/* index4 */
+/* מגבלות ומשמעויות */
+/* ------------------------------------------------------ */
+.index4 {
+    background-image: url("images/sky1.jpg");
+}
+
+/* ------------------------------------------------------ */
+/* index5 */
+/* תפעול */
+/* ------------------------------------------------------ */
+.index5 {
+    background-image: url("images/sky1.jpg");
+}
+
+#sortable { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    width: 60%; 
+}
+
+#sortable li { 
+    margin: 0 3px 3px 3px; 
+    padding: 0.4em; 
+    padding-left: 1.5em; 
+    font-size: 1.4em; 
+    height: 18px; 
+}
+
+#sortable li span { 
+    position: absolute; 
+    margin-left: -1.3em; 
+}
+
+/* ------------------------------------------------------ */
+/* index6 */
+/* שאלות סיכום */
+/* ------------------------------------------------------ */
+.index6 {
+    background-image: url("images/sky1.jpg");
+}
+
+#explenation-block, #answers, #done-questions, #finish-block {
+    visibility: hidden;
+    position: absolute;
+    top: 20%;
+    right: 21%;
+    height: 42%;
+    width: 55%;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 5vw;
+    font-size: 2vw;
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.15vw;
+    box-shadow: rgb(82, 82, 82) 1vw 1vw 2vw;
+}
+
+#start-btn, #finish-btn, #try-again-btn, #back-to-map {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+    padding: 1% 1% 1% 1%;
+    border-radius: 1vw;
+    margin-top: 10%;
+}
+
+#answers {
+    visibility: hidden;
+}
+
+#number {
+    direction: ltr;
+    visibility: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
+    position: absolute;
+    top: 6%;
+    right: 47%;
+}
+
+#question {
+    margin-right: 7%;
+    font-weight: 700;
+}
+
+#answer1, #answer2, #answer3, #answer4 {
+    margin-right: 12%;
+    width: 80%;
+    border-radius: 1vw;
+}
+
+#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #start-btn:hover, 
+#finish-btn:hover, #try-again-btn:hover, #back-to-map:hover {
+    cursor: pointer;
+}
+
+#answer1:active, #answer2:active, #answer3:active, #answer4:active, #start-btn:active, 
+#finish-btn:active, #try-again-btn:active, #back-to-map:active {
+    background-color: rgb(160, 160, 160);
+}
+
+#try-again-btn {
+    visibility: hidden;
+}
